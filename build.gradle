@@ -5,12 +5,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-}
-
-
-
 buildscript {
     ext {
         springBootVersion = '1.4.1.RELEASE'
@@ -47,6 +41,7 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-config-server')
     compile("org.springframework.boot:spring-boot-starter-jetty")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
 dependencyManagement {
