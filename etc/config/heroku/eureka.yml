@@ -13,7 +13,10 @@ eureka:
     name: eureka
     shouldOnDemandUpdateStatusChange: false
     serviceUrl:
-      defaultZone: http://spotlight-eureka-secondary.herokuapp.com/eureka/
+      defaultZone: https://spotlight-eureka-secondary.herokuapp.com/eureka/
+
+server:
+  port: 8010
 
 ---
 spring:
@@ -30,4 +33,7 @@ eureka:
     name: eureka
     shouldOnDemandUpdateStatusChange: false
     serviceUrl:
-      defaultZone: http://spotlight-eureka-primary.herokuapp.com/eureka/
+      defaultZone: https://spotlight-eureka-primary.herokuapp.com/eureka/
+
+server:
+  port: 8011
