@@ -15,3 +15,18 @@ spring:
 server:
  port: 8001
 
+---
+spring:
+  profiles: heroku
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sandroacoelho/dbpedia-spotlight-config-server
+          search-paths: etc/config/heroku
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+
