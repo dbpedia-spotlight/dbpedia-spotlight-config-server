@@ -28,7 +28,7 @@ sourceCompatibility = 1.8
 
 
 checkstyle {
-    configFile = new File("../etc/config/checkstyle", "checkstyle.xml")
+    configFile = new File("etc/config/checkstyle", "checkstyle.xml")
 }
 
 configurations {
