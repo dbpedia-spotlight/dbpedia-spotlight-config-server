@@ -1,0 +1,39 @@
+---
+spring:
+  profiles: eureka-primary
+  cloud:
+    config:
+      uri: http://localhost:8001
+
+eureka:
+  instance:
+    preferIpAddress: true
+  enableSelfPreservation: false
+  client:
+    name: eureka
+    shouldOnDemandUpdateStatusChange: false
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/
+
+server:
+  port: 8010
+
+---
+spring:
+  profiles: eureka-secondary
+  cloud:
+    config:
+      uri: http://localhost:8001
+
+eureka:
+  instance:
+    preferIpAddress: true
+  enableSelfPreservation: false
+  client:
+    name: eureka
+    shouldOnDemandUpdateStatusChange: false
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+
+server:
+  port: 8011
