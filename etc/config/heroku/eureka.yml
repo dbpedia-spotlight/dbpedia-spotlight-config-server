@@ -1,0 +1,39 @@
+---
+spring:
+  profiles: eureka-primary
+  cloud:
+    config:
+      uri: https://spotlight-config-server.herokuapp.com/
+
+eureka:
+  instance:
+    preferIpAddress: true
+  enableSelfPreservation: false
+  client:
+    name: eureka
+    shouldOnDemandUpdateStatusChange: false
+    serviceUrl:
+      defaultZone: http://spotlight-eureka-secondary.herokuapp.com/eureka/
+
+server:
+  port: 8010
+
+---
+spring:
+  profiles: eureka-secondary
+  cloud:
+    config:
+      uri: https://spotlight-config-server.herokuapp.com/
+
+eureka:
+  instance:
+    preferIpAddress: true
+  enableSelfPreservation: false
+  client:
+    name: eureka
+    shouldOnDemandUpdateStatusChange: false
+    serviceUrl:
+      defaultZone: http://spotlight-eureka-primary.herokuapp.com/eureka/
+
+server:
+  port: 8011
