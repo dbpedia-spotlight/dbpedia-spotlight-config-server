@@ -15,9 +15,6 @@ eureka:
     serviceUrl:
       defaultZone: https://spotlight-eureka-secondary.herokuapp.com/eureka/
 
-server:
-  port: 8010
-
 ---
 spring:
   profiles: eureka-secondary
@@ -35,5 +32,3 @@ eureka:
     serviceUrl:
       defaultZone: https://spotlight-eureka-primary.herokuapp.com/eureka/
 
-server:
-  port: 8011
