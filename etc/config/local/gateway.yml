@@ -1,0 +1,40 @@
+---
+gateway:
+  ribbon:
+    DeploymentContextBasedVipAddresses: spotlight-gateway
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
+    MaxAutoRetries: 3
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
+
+hystrix:
+  command:
+    default:
+      requestCache:
+        enabled: false
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+            interruptOnTimeout: true
+
+zuul:
+ ignoredServices: '*'
+ routes:
+  beehive-services:
+    path: /**
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/,http://localhost:8011/eureka/
+
+spring:
+ application:
+   name: gateway
+ cloud:
+   config:
+     uri: http://localhost:8001
