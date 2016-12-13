@@ -5,4 +5,4 @@ DBpedia Spotlight is a tool for automatically annotating mentions of DBpedia res
 
 ## What is DBpedia Spotlight Config Server?
 
-DBpedia Spotlight Config Server (provided Spring Cloud Config) is a Spring Boot application that provides an HTTP, resource-based API for external configuration (name-value pairs, or equivalent YAML content).
+DBpedia Spotlight Config Server (provided by Spring Cloud) is a Spring Boot application that provides an HTTP, resource-based API for external configuration (name-value pairs, or equivalent YAML content).
