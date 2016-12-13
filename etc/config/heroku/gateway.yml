@@ -1,4 +1,11 @@
 ---
+spring:
+ application:
+   name: gateway
+ cloud:
+   config:
+     uri: https://spotlight-config-server.herokuapp.com/
+
 gateway:
   ribbon:
     DeploymentContextBasedVipAddresses: spotlight-gateway
@@ -32,9 +39,3 @@ eureka:
     serviceUrl:
       defaultZone: https://spotlight-eureka-primary.herokuapp.com/eureka/,https://spotlight-eureka-secondary.herokuapp.com/eureka/
 
-spring:
- application:
-   name: gateway
- cloud:
-   config:
-     uri: https://spotlight-config-server.herokuapp.com/
