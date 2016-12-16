@@ -1,7 +1,7 @@
 ---
 spring:
  application:
-   name: gateway
+   name: spotlight-gateway
  cloud:
    config:
      uri: https://spotlight-config-server.herokuapp.com/
