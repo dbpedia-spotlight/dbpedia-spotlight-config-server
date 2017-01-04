@@ -6,7 +6,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
   client:
     serviceUrl:
-      defaultZone: http://localhost:8510/eureka/, http://localhost:8511/eureka/
+      defaultZone: http://localhost:8010/eureka/, http://localhost:8010/eureka/
 
 spring:
   application:
