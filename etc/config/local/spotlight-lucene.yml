@@ -14,3 +14,9 @@ spring:
   cloud:
     config:
       uri: http://localhost:8501
+
+dictionary: /mnt/dbpedia-spotlight/surface-forms
+
+solr:
+  uri: http://localhost:8983/solr/
+  core: 2016-04
