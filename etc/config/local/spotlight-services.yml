@@ -26,7 +26,7 @@ hystrix:
             timeoutInMilliseconds: 30000
             interruptOnTimeout: true
 server:
- port: 8080
+ port: 8090
 
 zuul:
  ignoredServices: '*'
