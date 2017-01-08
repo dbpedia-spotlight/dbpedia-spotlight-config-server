@@ -1,19 +1,10 @@
 ---
 spring:
  application:
-   name: spotlight-gateway
+   name: spotlight-services
  cloud:
    config:
      uri: http://localhost:8001
-
-gateway:
-  ribbon:
-    DeploymentContextBasedVipAddresses: spotlight-services
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 3
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
 
 hystrix:
   command:
@@ -26,12 +17,6 @@ hystrix:
             timeoutInMilliseconds: 30000
             interruptOnTimeout: true
 
-zuul:
- ignoredServices: '*'
- routes:
-  spotlight-gateway:
-    path: /**
-
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
@@ -39,3 +24,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/,http://localhost:8011/eureka/
 
+
+server:
+  port: 8090
