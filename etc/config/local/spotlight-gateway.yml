@@ -29,7 +29,7 @@ hystrix:
 zuul:
  ignoredServices: '*'
  routes:
-  beehive-services:
+  spotlight-gateway:
     path: /**
 
 eureka:
