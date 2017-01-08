@@ -6,15 +6,6 @@ spring:
    config:
      uri: http://localhost:8001
 
-spotlight-services:
-  ribbon:
-    DeploymentContextBasedVipAddresses: spotlight-services
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 3
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-
 hystrix:
   command:
     default:
@@ -25,14 +16,6 @@ hystrix:
           thread:
             timeoutInMilliseconds: 30000
             interruptOnTimeout: true
-server:
- port: 8080
-
-zuul:
- ignoredServices: '*'
- routes:
-  spotlight-gateway:
-    path: /**
 
 eureka:
   instance:
@@ -40,4 +23,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/,http://localhost:8011/eureka/
+
+
+server:
+  port: 8090
+
+
 
