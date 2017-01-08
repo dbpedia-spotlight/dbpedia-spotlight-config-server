@@ -6,7 +6,7 @@ spring:
    config:
      uri: http://localhost:8001
 
-gateway:
+spotlight-services:
   ribbon:
     DeploymentContextBasedVipAddresses: spotlight-services
     ReadTimeout: 30000
@@ -25,6 +25,8 @@ hystrix:
           thread:
             timeoutInMilliseconds: 30000
             interruptOnTimeout: true
+server:
+ port: 8080
 
 zuul:
  ignoredServices: '*'
