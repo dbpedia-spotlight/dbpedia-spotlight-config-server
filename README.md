@@ -4,15 +4,14 @@
 
 ## Attention:
 
-This work is an alpha version for [this draft proposal](https://docs.google.com/document/d/1EYZPN4KmyAhlGPfyRBjiAhBVgCSVzhG0jR-9kQd7v0s/edit?usp=sharing). 
-
-The main goal is validate the architecture that tries to solve 6 (six) points mentioned in the document. At this time, this code should not be used in a production environment.
+This work is an alpha version for [this draft proposal](https://docs.google.com/document/d/1EYZPN4KmyAhlGPfyRBjiAhBVgCSVzhG0jR-9kQd7v0s/edit?usp=sharing).  The main goal is to validate the architecture that tries to solve 6 (six) points mentioned in the document. At this time, this code should not be used in a production environment.
 
 You can participate providing suggestions, requesting features, testing, writing documentation or coding. Just get in touch with us!
 
-Best,
+All the best,
 
 
+=======================
 
 
 
