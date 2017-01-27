@@ -24,3 +24,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8001
+
+
+spotlight:
+      url: http://www.dbpedia-spotlight.com
