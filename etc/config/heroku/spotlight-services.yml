@@ -16,14 +16,14 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/, http://localhost:8011/eureka/
+      defaultZone: https://spotlight-eureka-primary.herokuapp.com/, https://spotlight-eureka-secondary.herokuapp.com/
 
 spring:
   application:
     name: spotlight-services
   cloud:
     config:
-      uri: http://localhost:8001
+      uri: https://spotlight-config-server.herokuapp.com/
 
 
 spotlight:

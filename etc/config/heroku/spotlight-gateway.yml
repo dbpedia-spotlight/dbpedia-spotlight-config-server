@@ -1,19 +1,12 @@
 ---
-spring:
- application:
-   name: spotlight-gateway
- cloud:
-   config:
-     uri: https://spotlight-config-server.herokuapp.com/
-
-gateway:
+spotlight-services:
   ribbon:
-    DeploymentContextBasedVipAddresses: spotlight-gateway
+    DeploymentContextBasedVipAddresses: spotlight-services
     ReadTimeout: 30000
     ConnectTimeout: 30000
-    MaxAutoRetries: 3
+    MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
+    OkToRetryOnAllOperations: false
 
 hystrix:
   command:
@@ -29,13 +22,23 @@ hystrix:
 zuul:
  ignoredServices: '*'
  routes:
-  spotlight-gateway:
+  spotlight-services:
     path: /**
+
+server:
+ port: 8080
 
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
   client:
     serviceUrl:
-      defaultZone: https://spotlight-eureka-primary.herokuapp.com/eureka/,https://spotlight-eureka-secondary.herokuapp.com/eureka/
+      defaultZone: https://spotlight-eureka-primary.herokuapp.com/, https://spotlight-eureka-secondary.herokuapp.com/
 
+
+spring:
+ application:
+   name: spotlight-gateway
+ cloud:
+   config:
+     uri: https://spotlight-config-server.herokuapp.com/
