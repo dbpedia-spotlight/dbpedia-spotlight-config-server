@@ -16,7 +16,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
   client:
     serviceUrl:
-      defaultZone: https://spotlight-eureka-primary.herokuapp.com/, https://spotlight-eureka-secondary.herokuapp.com/
+      defaultZone: https://spotlight-eureka-primary.herokuapp.com/eureka/, https://spotlight-eureka-secondary.herokuapp.com/eureka/
 
 spring:
   application:
