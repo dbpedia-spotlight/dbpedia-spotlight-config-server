@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/sandroacoelho/dbpedia-spotlight-config-server.svg?branch=master)](https://travis-ci.org/sandroacoelho/dbpedia-spotlight-config-server)
+[![Build Status](https://travis-ci.org/dbpedia-spotlight/dbpedia-spotlight-config-server.svg?branch=master)](https://travis-ci.org/dbpedia-spotlight/dbpedia-spotlight-config-server)
 
 
 ## Attention:
