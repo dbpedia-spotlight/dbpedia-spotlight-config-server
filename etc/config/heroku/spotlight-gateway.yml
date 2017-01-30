@@ -25,9 +25,6 @@ zuul:
   spotlight-services:
     path: /**
 
-server:
- port: 8080
-
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
