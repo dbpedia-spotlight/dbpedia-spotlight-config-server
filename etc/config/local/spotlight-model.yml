@@ -14,7 +14,12 @@ spring:
     name: spotlight-model-de
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8201
@@ -24,7 +29,12 @@ spring:
     name: spotlight-model-en
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8202
@@ -34,7 +44,12 @@ spring:
     name: spotlight-model-es
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8203
@@ -44,7 +59,12 @@ spring:
     name: spotlight-model-fr
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8204
@@ -54,7 +74,12 @@ spring:
     name: spotlight-model-it
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8205
@@ -64,7 +89,12 @@ spring:
     name: spotlight-model-nl
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8206
@@ -74,7 +104,12 @@ spring:
     name: spotlight-model-hu
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8207
@@ -84,7 +119,12 @@ spring:
     name: spotlight-model-pt
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8208
@@ -94,7 +134,12 @@ spring:
     name: spotlight-model-ru
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8209
@@ -104,7 +149,12 @@ spring:
     name: spotlight-model-sv
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8209
@@ -114,7 +164,12 @@ spring:
     name: spotlight-model-tr
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
 ---
 server:
   port: 8210
@@ -124,4 +179,9 @@ spring:
     name: spotlight-model-da
   cloud:
     config:
-      uri: http://spotlight-config-server.herokuapp.com/
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
