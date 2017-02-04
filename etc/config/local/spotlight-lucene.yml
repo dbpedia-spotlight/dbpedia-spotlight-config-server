@@ -1,6 +1,0 @@
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8010/eureka/, http://localhost:8011/eureka/
