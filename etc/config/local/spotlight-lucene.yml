@@ -4,3 +4,140 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/, http://localhost:8011/eureka/
+
+
+---
+server:
+  port: 8100
+spring:
+  profiles: de
+  application:
+    name: spotlight-lucene-de
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8101
+spring:
+  profiles: en
+  application:
+    name: spotlight-lucene-en
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8102
+spring:
+  profiles: es
+  application:
+    name: spotlight-lucene-es
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8103
+spring:
+  profiles: fr
+  application:
+    name: spotlight-lucene-fr
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8104
+spring:
+  profiles: it
+  application:
+    name: spotlight-lucene-it
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8105
+spring:
+  profiles: nl
+  application:
+    name: spotlight-lucene-nl
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8106
+spring:
+  profiles: pl
+  application:
+    name: spotlight-lucene-pl
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8107
+spring:
+  profiles: pt
+  application:
+    name: spotlight-lucene-pt
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
+---
+server:
+  port: 8108
+spring:
+  profiles: ru
+  application:
+    name: spotlight-lucene-ru
+  cloud:
+    config:
+      uri: http://localhost:8001
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost
+    port: 5672
