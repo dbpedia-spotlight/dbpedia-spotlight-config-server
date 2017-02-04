@@ -1,0 +1,6 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://spotlight-eureka-primary.herokuapp.com/eureka/, http://spotlight-eureka-secondary.herokuapp.com/eureka/
