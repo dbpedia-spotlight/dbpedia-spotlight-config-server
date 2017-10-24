@@ -25,7 +25,7 @@ spring:
 
 
 spotlight:
-      url: http://www.dbpedia-spotlight.com
+      url: http://model.dbpedia-spotlight.org
 
 
 json-ld:
