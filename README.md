@@ -28,8 +28,6 @@ DBpedia Spotlight Config Server (provided by Spring Cloud) is a Spring Boot appl
 
 If you have any problems with or questions about this library, please contact us through a [GitHub issue](https://github.com/sandroacoelho/dbpedia-spotlight-config-server/issues).
 
-## Maintainers
 
-<a href="http://infai.org"><img src="http://infai.org/de/Presse/Logos/files?get=infai_logo_en_rgb_300dpi.jpg" align="left" height="20%" width="20%" ></a>
 
 
